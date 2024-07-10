@@ -16,7 +16,8 @@
     --code-bg-color: #444749;
     --input-style: solid;
     --display-h1-decoration: none;
-    --block-background-color: var(--background-color)
+    --block-background-color: var(--background-color);
+    --border: dashed 1px rgba(0, 255, 0, 0.9);
 }
 
 * {
@@ -40,7 +41,9 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6,.logo {
-    line-height: var(--global-line-height)
+    line-height: var(--global-line-height);
+    border-top: var(--border);
+    border-bottom: var(--border);
 }
 
 a {
@@ -84,7 +87,6 @@ h1,.logo {
 }
 
 h1::after {
-    content: "====================================================================================================";
     position: absolute;
     bottom: 5px;
     left: 0;
