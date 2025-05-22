@@ -1,10 +1,10 @@
 {{ define "main" }}
 
 <!-- <h1>About</h1> -->
-<img src="{{ "/exoplanet1.gif" | relURL }}"></img>
-<p>
-
-</p>
+<img src="{{ "/exoplanet1.gif" | relURL }}" style="height:100px"></img>
+    <p>
+    A Leading Intrastellar Technology Corporation
+    </p>
 <br/>
 
 <!-- <h1>Latest posts</h1> -->
@@ -23,7 +23,8 @@
 {{ end }}
 </div>
 
-<h1>Coming Soon</h1>
+<h2>Developing Novel Interactive Entertainment Systems</h2>
+<img src="{{ "/game1.png" | relURL }}" ></img>
 
 <div class="image-grid">
 {{ with .Site.GetPage "/photos" }}
